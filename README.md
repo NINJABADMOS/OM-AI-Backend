@@ -149,3 +149,15 @@ def unblock(username: str, secret: str, db: Session = Depends(get_db)):
     db.commit()
     return {"msg": f"{username} unblocked"}
     
+Requirment.txt - 
+
+fastapi==0.111.0
+uvicorn==0.30.1
+python-multipart==0.0.9
+pydantic==2.7.1
+sqlalchemy==2.0.30
+passlib[bcrypt]==1.7.4
+python-jose==3.3.0
+requests==2.31.0
+email-validator==2.1.1
+aiofiles==23.2.1
